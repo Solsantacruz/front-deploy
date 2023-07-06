@@ -10,10 +10,12 @@ export const SEARCH_NAME = "SEARCH_NAME";
 export const CREATE_POKEMON = "CREATE_POKEMON";
 export const DELETE_POKE = "DELETE_POKE";
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
+const URL = 'https://api-poke-deploy.vercel.app';
 
 
 export const deletePokemons = (id) =>{
     const endpoint = `http://localhost:5000/pokemons/delete/`;
+    
    return async (dispatch) => {
     // try {
     //   const response = (await axios.delete(endpoint)).data;
@@ -47,7 +49,7 @@ export const deletePokemons = (id) =>{
 export function getAllPokemon() {
         return async function(dispatch){
             try {
-            const response = await axios.get("http://localhost:5000/pokemons")
+            const response = await axios.get(`${URL}/pokemons`)
             return dispatch({
                 type: GET_POKEMON,
                 payload: response.data
@@ -89,7 +91,7 @@ export function sortByOrderName (payload) {
 export function getSearchName (name) {
     return async function (dispatch){
         try{
-        let response = await axios.get(`http://localhost:5000/pokemons?name=${name}`)
+        let response = await axios.get(`${URL}/pokemons?name=${name}`)
         const pokemon = response.data;
         return dispatch({
             type: SEARCH_NAME,
@@ -105,7 +107,7 @@ export function getById (id){
     // console.log(id)
     return async function (dispatch) {
         try{
-        let response = await axios.get(`http://localhost:5000/pokemons/${id}`)
+        let response = await axios.get(`${URL}/pokemons/${id}`)
         return dispatch({
             type: GET_DETAIL,
             payload: response.data
@@ -119,7 +121,7 @@ export function getById (id){
 
 export function createPokemon (payload) {
     return async function (dispatch) {
-            let response = await axios.post("http://localhost:5000/pokemons", payload)
+            let response = await axios.post(`${URL}/pokemons`, payload)
             return dispatch({
                 type: CREATE_POKEMON,
                 payload: response
@@ -129,7 +131,7 @@ export function createPokemon (payload) {
 export function getTypes () {
     return async function (dispatch) {
         try {
-        let response = await axios.get("http://localhost:5000/types", {
+        let response = await axios.get(`${URL}/types`, {
 
         })
         return dispatch({

@@ -12,7 +12,7 @@
  }
  @media (max-width: 700px) {
     .input {
-        width: 100px;
+        width: 75px;
         border-radius: 700px;
     }
   }

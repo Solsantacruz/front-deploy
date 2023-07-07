@@ -25,13 +25,10 @@
 
 @media (max-width: 700px) {
     .links {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;
-      width: 116.8px;
-      height: 30px;
-      padding: 5px 10px;
-      font-size: 15px;
+      margin: 2px;
+      width: 87px;
+      height: 20px;
+      font-size: 10px;
     }
   }
 
@@ -49,7 +46,7 @@
 
 @media (max-width: 700px) {
     .img {
-      width: 40px;
-      height: 47px;
+      width: 47px;
+      height: 57px;
     }
   }

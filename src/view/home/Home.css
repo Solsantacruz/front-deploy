@@ -27,11 +27,22 @@
   gap: 50px;
 }
 
+
+
 .filtros {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
+
+@media (max-width: 700px) {
+    .filtros {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
 
 .boton {
     background-color: rgb(29, 20, 44);
@@ -76,6 +87,12 @@
     margin-bottom: 20px;
 }
 
+/* @media (max-width: 700px) {
+    .paginado {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } */
+
 /* Estilos para formato mobile */
 @media (max-width: 1140px) {
     .contenedor-card {
@@ -88,6 +105,7 @@
 @media (max-width: 1050px) {
     .contenedor-card {
       grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
     }
   }
 

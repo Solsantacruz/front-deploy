@@ -82,9 +82,5 @@
     }
   }
 
-  @media (max-width: 900px) {
-    .contenedor {
-      background-size: 100vh 100%; /* Ajustar el ancho y adaptar la altura automáticamente */
-    }
-  }
+
 

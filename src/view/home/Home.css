@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  z-index: -1;
 }
 
 .contenidoElementos {
@@ -76,7 +77,15 @@
 }
 
 /* Estilos para formato mobile */
-@media (max-width: 970px) {
+@media (max-width: 1140px) {
+    .contenedor-card {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+
+@media (max-width: 1050px) {
     .contenedor-card {
       grid-template-columns: repeat(2, 1fr);
     }

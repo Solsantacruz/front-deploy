@@ -29,6 +29,15 @@
      font-family: "IBM Plex Mono", monospace;
      
  }
+
+ @media (max-width: 700px) {
+    .boton {
+      width: 62px;
+      height: 29px;
+      text-align: center;
+      padding: 5px;
+    }
+  }
  
  .boton:hover{
      background-color: rgb(108, 39, 228);

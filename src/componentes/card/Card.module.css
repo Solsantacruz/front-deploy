@@ -11,6 +11,18 @@
     background: rgba(255, 254, 254, 0.782);
 }
 
+@media screen and (max-width: 900px) {
+  .card {
+    height: 110px;
+    width: 170px;
+  }
+  .img {
+    max-width: 140%;
+    height: 90px;
+  }
+  
+}
+
 .card:hover {
   transform: translateY(-3%);
   box-shadow: 0 0 10px 6px rgb(199, 197, 197);

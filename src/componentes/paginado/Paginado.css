@@ -10,6 +10,12 @@
     font-size: 1rem;
 }
 
+@media (max-width: 700px) {
+    .fijo {
+      margin: 2.5px;
+    }
+  }
+
 .fijo:hover{
     background-color:  rgb(194, 2, 2);
     color: rgb(253, 245, 17)
